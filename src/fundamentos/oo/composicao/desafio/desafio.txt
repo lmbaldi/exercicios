@@ -1,0 +1,23 @@
+cliente tem varias compras e uma compra tem um cliente(relacao bidirecional)
+compra tem varios itens
+Item tem um produto, um produto pode estar em varios itens
+
+calcular o valor total que o cliente gastou
+
+
+Item
+- qtde
+- produto
+
+Produto
+- preco
+- nome
+
+Compra
+Lista de itens
+obterValorTotal
+
+Cliente
+nome
+lista de compras
+obterValorTotal
