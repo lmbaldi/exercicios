@@ -19,6 +19,8 @@ public class OutrosMetodos {
 		
 		List<Aluno> alunos = Arrays.asList(a1, a2, a3, a4, a5, a6, a7, a8);
 		
+		Predicate<Aluno> aprovado = a -> a.nota >=7;
+		
 		System.out.println("distinct...");
 		alunos.stream().distinct().forEach(System.out::println);
 		
@@ -32,7 +34,7 @@ public class OutrosMetodos {
 		System.out.println("\ntakeWhile");
 		alunos.stream()
 			.distinct()
-			.takeWhile(a -> a.nota >= 7)
+			.takeWhile( a -> a.nota >=7)
 			.forEach(System.out::println);
 
 	}
