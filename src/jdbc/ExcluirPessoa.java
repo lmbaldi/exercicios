@@ -1,5 +1,6 @@
 package jdbc;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,7 +12,7 @@ import java.util.Scanner;
 
 public class ExcluirPessoa {
 
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args) throws SQLException, IOException {
 		
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Informe o código da pessoa: ");

@@ -1,5 +1,6 @@
 package jdbc;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,7 +10,7 @@ import java.util.List;
 
 public class ConsultarPessoas1 {
 
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args) throws SQLException, IOException {
 
 		Connection conexao = FabricaConexao.getConexao();
 		String sql = "SELECT * FROM pessoas";
